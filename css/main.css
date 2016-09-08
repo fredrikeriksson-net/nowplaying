@@ -1,0 +1,251 @@
+/*
+
+*CH1 - Tyopgraphy
+*CH2 - Page Structure
+*CH4 - Content & Media
+
+
+*/
+
+/* 
+Mobile
+*/
+
+/*CH1 - Typography
+----------------*/
+
+h2 {
+  color: #000;  
+  font: 700 24px lato;
+}
+
+
+/* Title, Artist, Album  
+------------------------------------------------*/
+
+#title, #artist, #album {
+  font: 700 24px lato;
+  padding: 0;
+}
+
+#artist, #album {
+  color: #333;
+  margin: 0;
+}
+
+#title{
+	color: #000;
+  margin:  10px 0 0 0 ;
+}
+
+#artist{
+	font-weight: 400;
+}
+
+#album {
+	font-weight: 200;
+}
+
+#artist:hover {
+	color: #000;
+	cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* Recent Tracks
+-------------------*/
+
+#recentTracks p {
+	color: #000;
+  font: 18px/20px lato;
+	margin: 0;
+	padding: 0;
+}
+
+#recentTracks p:nth-child(even) {
+	color: #333;
+}
+
+/* Summary, Tag
+-----------------*/
+
+#summary, #tag {
+	color: #333;
+  font: 400 18px/20px lato;
+}
+
+#summary a {
+	color: #333;
+	text-decoration: none;
+  font-weight: 700;
+  }
+
+#summary a:hover {
+  color: #000;
+}
+
+/* Top 5 Albums & Similar Artists 
+-----------------------------------*/ 
+
+#topAlbumList li, #similarList li {
+  color: #333;
+  font: 18px/20px lato;
+  list-style: none; 
+}
+
+#topAlbumList li {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*CH2 - Page Structure
+-----------------------*/
+
+body {
+	background-color: #EFEFEF;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+	margin: 0 auto;
+}
+
+figure {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+figcaption {
+	width: 300px;
+	margin: 0 auto;
+}
+
+#recentTracks {
+	width: 300px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+#recentTracks li {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #666;
+}
+
+#recentTracks li:last-child {
+	border: none;
+}
+
+#topAlbumList {
+  margin: 50px auto 0px auto;
+  padding: 0px;
+  width: 300px;
+} 
+
+#similarList {
+  margin: 0 auto;
+	padding: 0;
+  width: 300px;
+}
+
+#search {
+	width: 300px;
+	margin: 20px auto 50px auto;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.hidden {
+	display: none;
+}
+
+/*CH4 - Content & Media
+--------------------------*/
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#coverArt img, #artistImage img {
+	border: 2px solid #000;
+	display: inline-block;
+	margin: 0 auto;
+  padding: 0;
+}
+
+#topAlbumList img {
+	border: 1px solid #000;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+input, button {
+  border: 0;
+	background-color: #efefef;
+  font: 700 18px lato;
+  padding: 5px;
+}
+
+input {
+  border-bottom: 1px solid #333;
+  margin-right: 5px;
+  width: 180px;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+button {
+  width: 100px;
+}
+
+/* 
+Desktop 
+*/
+
+@media screen and (min-width: 485px) {
+
+  /*CH2 - Page Structure
+  -----------------------*/
+  
+	.wrapper {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 960px;
+		margin: 0 auto;
+	}
+  
+  #coverArt {
+    margin: 20px 50px;
+  }
+  
+  #logo {
+    margin-top: 50px;
+  }
+  
+	#artistImage {
+    margin-top: 202px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+

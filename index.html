@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>#Nowplaying</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<section id="nowPlaying">
+
+			<header>
+				<img id="logo" src="img/logo.png">
+			</header>
+
+			<figure id="coverArt">
+
+			</figure>
+
+			<figcaption>
+				<p id="title"></p>
+				<p id="artist"></p>
+				<p id="album"></p>
+			</figcaption>
+
+			<ul id="recentTracks">
+				<h2>Recent tracks</h2>
+			</ul>
+
+		</section>
+
+		<section id="artistInfo" class="hidden">
+
+			<figure id="artistImage">
+
+			</figure>
+
+			<figcaption>
+				<h2 id="artistHeader"></h2>
+				<p id="summary"></p>
+				<p id="tag"></p>
+			</figcaption>
+
+			<ul id="topAlbumList">
+				<h2 id="topAlbumsHeader"></h2>
+				<li id="album0"></li>
+				<li id="album1"></li>
+				<li id="album2"></li>
+				<li id="album3"></li>
+				<li id="album4"></li>
+				<li id="album4"></li>
+			</ul>
+
+			<ul id="similarList">
+				<h2 id="similar"></h2>
+				<li id="similar0"></li>
+				<li id="similar1"></li>
+				<li id="similar2"></li>
+				<li id="similar3"></li>
+				<li id="similar4"></li>
+			</ul>
+
+			<section id="search">
+				<input id="searchArtist" class="hidden" placeholder="Search artists">
+				<button onclick="artistMore()" id="searchButton" class="hidden">Search</button>
+			</section>
+
+		</section>
+  </div>
+		
+  <script src="js/lastfm.js"></script>
+
+	
+</body>
+
+</html>
